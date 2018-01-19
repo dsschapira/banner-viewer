@@ -1,5 +1,6 @@
 {
     "banner-links":{
+        "title": "Growth Spurt",
         "160x600": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/160x600/index.html",
         "300x250": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/300x250/index.html",
         "300x600": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/300x600/index.html",
@@ -8,6 +9,7 @@
     },
     "banner-links-multi":{
         "GrowthSpurt":{
+            "title": "Growth Spurt",
             "160x600": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/160x600/index.html",
             "300x250": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/300x250/index.html",
             "300x600": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/300x600/index.html",
@@ -15,6 +17,7 @@
             "728x90": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/728x90/index.html"
         },
         "IfYouDontSee":{
+            "title": "If You Don't See",
             "160x600": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/IfYouDontSee/160x600/index.html",
             "300x250": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/IfYouDontSee/300x250/index.html",
             "300x600": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/IfYouDontSee/300x600/index.html",

@@ -10,18 +10,19 @@ import { Subscription } from 'rxjs/Subscription';
 export class AppComponent {
   bannerLinks:Object;
   bannerSets = [];
-  
+
   constructor(private bannerService: BannerLinksService){
 
     this.bannerService.getBanners().subscribe((res)=>{
       this.bannerLinks = res.json();
       if(this.bannerLinks["banner-links-multi"]){
-        for(const key in this.bannerLinks["banner-links-multi"]){
-          this.bannerSets.push(key); //will need to send the whole object to the banner sets in this case still
+        const obj = this.bannerLinks["banner-links-multi"];
+        for(const key in obj){
+          this.bannerSets.push(obj[key].title); //This holds the titles - still need to push the entire object to lower components
         }
       }
       else{
- 
+        
       }
     });
 

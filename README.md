@@ -16,4 +16,4 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Banner Loading
 
-To load banners into the app, they must be in a JSON file and the sub-headers should be "banner-links" for one set, or "banner-links-multi" for multiple sets of banners.
+To load banners into the app, they must be in a JSON file and the sub-headers should be "banner-links" for one set, or "banner-links-multi" for multiple sets of banners.  Each set should have a "title" value.
