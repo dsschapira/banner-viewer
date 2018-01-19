@@ -1,7 +1,12 @@
 <div id="main-container">
   <h1>Banner Viewer</h1>
+  <section *ngIf="bannerSets.length>0">
+    <div *ngFor="let bannerSet of bannerSets">
+      {{bannerSet}}
+    </div>
+  </section>
 </div>
 
-<section>
-  {{bannerLinks}}
-</section>
+
+
+ 

@@ -8,17 +8,22 @@ import { Subscription } from 'rxjs/Subscription';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  bannerLinks:string;
-
+  bannerLinks:Object;
+  bannerSets = [];
+  
   constructor(private bannerService: BannerLinksService){
 
     this.bannerService.getBanners().subscribe((res)=>{
-      this.bannerLinks = JSON.stringify(res.json());
+      this.bannerLinks = res.json();
+      if(this.bannerLinks["banner-links-multi"]){
+        for(const key in this.bannerLinks["banner-links-multi"]){
+          this.bannerSets.push(key); //will need to send the whole object to the banner sets in this case still
+        }
+      }
+      else{
+ 
+      }
     });
 
-  }
-
-  ngOnInit(){
-    
   }
 }
