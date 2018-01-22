@@ -8,15 +8,18 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BannerSetContainerComponent implements OnInit {
   
   sizes = [];
+  urls = [];
+  ids = [];
 
-  @Input() bannerSet:Object;
+  @Input() bannerSet:any;
   constructor() { }
 
   ngOnInit() {
-    console.log(this.bannerSet);
     for(const key in this.bannerSet){
-      if(key !== 'title'){
+      if(key !== 'title' && key !=="id"){
         this.sizes.push(key);
+        this.urls.push(this.bannerSet[key]);
+        this.ids.push(this.bannerSet.id+"-"+key);
       }
     }
   }

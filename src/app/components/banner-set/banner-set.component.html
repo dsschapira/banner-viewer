@@ -1,5 +1,6 @@
 <h4 style="display:inline-block;">{{size}}</h4>
 <div class="show-hide-control">
-  <input class="showHideBtn" type="checkbox">
+  <input class="showHideBtn" type="checkbox" (click)="showHideToggle($event,id);">
   <span>Show/Hide</span>
 </div>
+<app-banner [url]="url" [width]="width" [height]="height" [id]="id"></app-banner>
