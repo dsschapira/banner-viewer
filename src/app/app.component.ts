@@ -22,7 +22,10 @@ export class AppComponent {
         }
       }
       else{
-        
+        const obj = this.bannerLinks["banner-links"];
+        for(const key in obj){
+          this.bannerSets.push(obj[key]);
+        }
       }
     });
 
