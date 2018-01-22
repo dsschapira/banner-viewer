@@ -30,7 +30,7 @@ export class BannerSetComponent implements OnInit {
   }
 
   refreshIframe(e,id){
-    document.getElementById(id+"-frame").src += ""; //the error-line on the src attribute is incorrect - there is a source attribute on this element.
+    (<HTMLIFrameElement>document.getElementById(id+"-frame")).src += ""; //the error-line on the src attribute is incorrect - there is a source attribute on this element.
   }
 
 }
