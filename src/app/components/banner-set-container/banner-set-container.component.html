@@ -1,6 +1,7 @@
 <section class="banner-section">
-  <h2>{{bannerSet.title}}</h2>
+  <h2 class="banner-set-title">{{bannerSet.title}}</h2>
   <section *ngIf="sizes.length>0"  class="banner-set">
+    <button class="refresh-set-button" (click)="refreshAll()">Refresh Set</button>
     <section *ngFor="let size of sizes; let i=index">
       <app-banner-set [size]="size" [url]="urls[i]" [id]="ids[i]"></app-banner-set>
     </section>

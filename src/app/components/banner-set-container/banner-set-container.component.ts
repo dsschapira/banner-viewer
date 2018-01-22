@@ -24,4 +24,10 @@ export class BannerSetContainerComponent implements OnInit {
     }
   }
 
+  refreshAll(){
+    for(const id of this.ids){
+      (<HTMLIFrameElement>document.getElementById(id+"-frame")).src += "";
+    }
+  }
+
 }
