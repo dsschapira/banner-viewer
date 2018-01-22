@@ -18,7 +18,7 @@ export class AppComponent {
       if(this.bannerLinks["banner-links-multi"]){
         const obj = this.bannerLinks["banner-links-multi"];
         for(const key in obj){
-          this.bannerSets.push(obj[key].title); //This holds the titles - still need to push the entire object to lower components test
+          this.bannerSets.push(obj[key]); //This holds the titles - still need to push the entire object to lower components test
         }
       }
       else{

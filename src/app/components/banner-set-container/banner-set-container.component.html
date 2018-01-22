@@ -1,3 +1,9 @@
-<p>
-  banner-set-container works!
-</p>
+<section class="banner-section">
+  <h2>{{bannerSet.title}}</h2>
+  <section *ngIf="sizes.length>0"  class="banner-set">
+    <section *ngFor="let size of sizes">
+      <app-banner-set [size]="size"></app-banner-set>
+    </section>
+  </section>
+</section>
+

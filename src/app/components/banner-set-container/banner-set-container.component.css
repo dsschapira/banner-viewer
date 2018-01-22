@@ -1,0 +1,12 @@
+.banner-section{
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top:1em;
+    margin-bottom:1em;
+    min-height:600px;
+    width:90%;
+}
+.banner-set{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+}
