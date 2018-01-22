@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-declare var jquery:any;
-declare var $:any;
 
 @Component({
   selector: 'app-banner-set',
@@ -21,7 +19,18 @@ export class BannerSetComponent implements OnInit {
   }
 
   showHideToggle(e, id){
-    $("#"+id).toggleClass('hidden');
+    console.log(id);
+    const currDisplay = document.getElementById(id+"-frame").style.display;
+    if(currDisplay==="inline" || currDisplay===""){
+      document.getElementById(id+"-frame").style.display = "none";
+    }
+    else{
+      document.getElementById(id+"-frame").style.display = "inline";
+    }
+  }
+
+  refreshIframe(e,id){
+    document.getElementById(id+"-frame").src += ""; //the error-line on the src attribute is incorrect - there is a source attribute on this element.
   }
 
 }

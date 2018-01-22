@@ -10,6 +10,7 @@ export class BannerComponent implements OnInit {
   @Input() url:string;
   @Input() width:string;
   @Input() height:string;
+  @Input() id:string;
   safeUrl: SafeResourceUrl;
   constructor(private sanitizer: DomSanitizer) { 
   }
