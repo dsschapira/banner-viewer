@@ -1,0 +1,10 @@
+.show-hide-control{
+    display:inline;
+}
+.show-hide-control>input{
+    position:relative;
+    top:2px;
+}
+.show-hide-control>span{
+    font-size:0.75em;
+}
