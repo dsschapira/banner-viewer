@@ -1,7 +1,22 @@
 {
     "banner-links-multi":{
+        "RASushiD":{
+            "id":1,
+            "title":"Dinner",
+            "300x250": "dev.chemistry.digital/RaSushi/3963-2-Banners/Order_Dinner/index.html"
+        },
+        "RASushiG":{
+            "id":2,
+            "title":"General",
+            "300x250": "dev.chemistry.digital/RaSushi/3963-2-Banners/Order_General/index.html"
+        },
+        "RASushiL":{
+            "id":3,
+            "title":"Lunch",
+            "300x250": "dev.chemistry.digital/RaSushi/3963-2-Banners/Order_Lunch/index.html"
+        },
         "GrowthSpurt":{
-            "id": "1",
+            "id": 4,
             "title": "Growth Spurt",
             "160x600": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/160x600/index.html",
             "300x250": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/300x250/index.html",
@@ -10,7 +25,7 @@
             "728x90": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/GrowthSpurt/728x90/index.html"
         },
         "IfYouDontSee":{
-            "id" : "2",
+            "id" : 5,
             "title": "If You Don't See",
             "160x600": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/IfYouDontSee/160x600/index.html",
             "300x250": "dev.chemistry.digital/choa/banners/3880-digital-pre-launch/IfYouDontSee/300x250/index.html",

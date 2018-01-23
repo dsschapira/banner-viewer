@@ -1,9 +1,7 @@
 <div id="main-container">
   <h1>Banner Viewer</h1>
   <section *ngIf="bannerSets.length>0" id="main-section">
-    <div *ngFor="let bannerSet of bannerSets">
-      <app-banner-set-container [bannerSet]="bannerSet"></app-banner-set-container>
-    </div>
+    <app-banner-set-container *ngFor="let bannerSet of bannerSets" [bannerSet]="bannerSet"></app-banner-set-container>
   </section>
 </div>
 
